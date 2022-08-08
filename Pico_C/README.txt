@@ -1,0 +1,1 @@
+To build, press ctrl-shift-b in VS Code. this will run a script to build and then copy the .uf2 (Drone.uf2, in the build folder) to the D:/ drive (this can be changed in copy.bat), which is assumed to be the pico in boot mode.

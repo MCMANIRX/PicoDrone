@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/mcser/Documents/worc/code/Pico_C/log/build",
+  "command": "C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1430~1.307\\bin\\Hostx86\\x64\\cl.exe  /nologo /TP  -external:IC:\\Users\\mcser\\Documents\\worc\\code\\opencv\\build\\include -external:W0 /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\log.dir\\log.cpp.obj /FdCMakeFiles\\log.dir\\ /FS -c C:\\Users\\mcser\\Documents\\worc\\code\\Pico_C\\log\\log.cpp",
+  "file": "C:/Users/mcser/Documents/worc/code/Pico_C/log/log.cpp"
+}
+]

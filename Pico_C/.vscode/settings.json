@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "screen.h": "c",
+        "waveshare_frame.h": "c",
+        "string.h": "c",
+        "gui_paint.h": "c",
+        "to565.h": "c",
+        "t_image.h": "c",
+        "barometer.h": "c"
+    }
+}
