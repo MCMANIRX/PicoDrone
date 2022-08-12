@@ -162,8 +162,8 @@ while(1)    {
 
     render3D(1,fBuf);
 
-    img_temp();
-    img_pres();
+    img_temp(); 
+    //img_pres(); //doesn't work?
    
 
 
