@@ -36,7 +36,7 @@ while(not begin):
     try:
 
         com = serial.Serial(
-            port = 'COM11',
+            port = 'COM14',
 
             baudrate = 115200,
 
@@ -59,6 +59,16 @@ while(not begin):
     if x == b'S':
         begin = True
         print("begin read")
+        print(com.read(1))
+
+        print(com.read(1))
+
+        print(com.read(1))
+
+        print(com.read(1))
+
+        print(com.read(1))
+
         break 
 
 while(com.read(1)!=b's'):
@@ -66,7 +76,7 @@ while(com.read(1)!=b's'):
 
 while(com.read(1)==b's'):
     begin = begin
-    #print("spinning...")
+    print("spinning...")
 
 
 f1 = False
@@ -89,7 +99,7 @@ b = 0
 
 while(not f1):
     x = com.readline()
-    #vprint(x)
+  #  print(x)
   #  print(len(one))
 
 

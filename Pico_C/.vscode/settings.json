@@ -6,6 +6,7 @@
         "gui_paint.h": "c",
         "to565.h": "c",
         "t_image.h": "c",
-        "barometer.h": "c"
+        "barometer.h": "c",
+        "lcd_2in.h": "c"
     }
 }

@@ -40,11 +40,14 @@ include_directories(./lib/3D)
 
 add_executable(${PROJECT_NAME}
    # raw.c
-    frame_test.c
+    #frame_test.c
    # frame_test.h
-    waveshare_frame.c
+   # waveshare_frame.c
     barometer.c
-    run_motors.c
+   # run_motors.c
+   # imagedata.c
+   # imagedata.h
+ #  camera.c
   #temp.c
 
     #vga_out.c

@@ -8,8 +8,7 @@
 #include "camera.h"
 #include "ov5642_regs.h"
 
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+uint32_t frame[320*240];
 
 
 uint8_t address = 0x3c;
@@ -172,11 +171,10 @@ uint8_t* read_fifo_burst() {
         printf("%x",imgBuf[count++]);
 
 // *stbi_load_from_memory   (stbi_uc           const *buffer, int len   , int *x, int *y, int *channels_in_file, int desired_channels);
-    uint8_t* image = stbi_load_from_memory(imgBuf,len,320,240,3,3);
-    return image;
-}
 
-void captureFrame(uint8_t pics) {
+
+}
+int captureFrame(uint8_t pics) {
 
     //clear fifo flag
     spi_w(0x04,0x1);
@@ -259,7 +257,8 @@ int main() {
 
 //I2C and cam test
 
-while(1){
+while(1) {
+    
     if(camCheck())
         break;
     else 
@@ -287,6 +286,6 @@ if(rx == 0x56)
 //init cam
 camInit();
 
-captureFrame(0);
+ captureFrame(0);
 
 }
