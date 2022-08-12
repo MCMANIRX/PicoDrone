@@ -5,15 +5,11 @@
 #include "pico/binary_info.h"
 #include "screen.h"
 #include "waveshare_frame.h"
+#include "t_image.h"
 #include "gfx3d.h"
 #include "frame_test.h"
 #include "barometer.h"
 #include "run_motors.h"
-#include "t_image.h"
-#include "t_image_8.h"
-//#include "ImageData.h"
-
-
 
 float f_t;
 float f_p;
@@ -91,11 +87,11 @@ int main() {
     gpio_init(RESET_PIN);
 
     gpio_set_dir(LED_PIN, GPIO_OUT);
-  //  gpio_set_dir(RESET_PIN, GPIO_OUT);
+    gpio_set_dir(RESET_PIN, GPIO_OUT);
 
     
     gpio_put(LED_PIN,false);
-  //  run_motors();
+    run_motors();
     gpio_put(LED_PIN,true);
 
         stdio_init_all();
@@ -115,9 +111,9 @@ int main() {
   //img_put(32,32,144,104,test_img2);
 
 
-   //   draw_rect(40,40,35,35,0x738adb);
+     // draw_rect(40,40,35,35,0x738adb);
 
-  //img_put(320,240,0,0,test_img);
+ // img_put(320,240,0,0,test_img);
 
     // render3D(1,fBuf);
 
@@ -132,32 +128,20 @@ int main() {
  // sleep_ms(500);
 
 
-      img_init(fBuf);
 
- // img_put(320,240,0,0,test_img);
-
-  while(1) {
-
-          //Paint_DrawImage1(gImage_2inch_1,0,0,320,240);
-
-   // Paint_DrawImage1((UBYTE*)(test_img_8),0,0,320,240);
-    //LCD_2IN_Display((UBYTE *)fBuf);
-    DEV_Delay_ms(1000);
-
-
-  }
-/*
  
     putchar_raw('S');
 
+      img_init(fBuf);
+  
+  img_put(320,240,0,0,test_img);
 
 
+    barometer_init();
 
-  // barometer_init();
+        f_p = read_pres();
 
-        f_p = 4;//read_pres();
-
-    f_t = 6;//read_temp('f');
+    f_t = read_temp('f');
 
 
 
@@ -201,7 +185,7 @@ while(1)    {
               reset_y();
 
 
-}*/
+}
 
 
 

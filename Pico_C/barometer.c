@@ -171,7 +171,7 @@ float read_pres() {
 
 }
 
-void main() {  
+void barometer_init() {  
 
  // void  main() {
 

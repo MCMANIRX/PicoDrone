@@ -49,6 +49,6 @@
 #define W 320
 
 //uint16_t fBuf[320*240] = {0};
-uint16_t fBuf[320*240] = {0};
+uint16_t fBuf[320*240] = {0xf800};
 
 
